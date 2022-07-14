@@ -11,6 +11,12 @@
 # production
 /build
 
+#all environment variables
+.env
+
+#scss mapping files
+*.map
+
 # misc
 .DS_Store
 .env.local

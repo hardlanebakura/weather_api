@@ -1,0 +1,114 @@
+$gradientMargin1: rgba(0, 0, 0, 0.2);
+$gradientMargin2: rgba(0, 0, 0, 0.75);
+$inputBg: rgba(0, 0, 0, 0.5);
+$c: rgba(50, 50, 70, 0.5);
+$w: rgba(255, 255, 255, 0.2);
+$ce: center;
+$n: none;
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+.App {
+
+    text-align: $ce;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("../images/cold-weather.jpeg");
+    background-position: $ce;
+    transition: 0.4s ease-out;
+    min-height: 100vh;
+    background-size: cover;
+
+}
+
+.warm-weather {
+
+    background-image: url("../images/warm-weather.jpeg");
+
+}
+
+.weather__container {
+
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, $gradientMargin1, $gradientMargin2);
+    padding: 25px;
+
+}
+
+.searchbox {
+
+    width: 76%;
+    margin: 0 auto 75px;
+
+}
+
+.searchbar {
+
+    display: block;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+
+    appearance: $n;
+    background: $n;
+    border: $n;
+    outline: $n;
+
+    background-color: $inputBg;
+    border-radius: 0 0 16px 16px;
+
+    box-shadow: 0px 5px $gradientMargin1;
+
+}
+
+.city__container {
+
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: $ce;
+    text-shadow: 3px 3px $c;
+
+}
+
+.date {
+
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: $ce;
+    text-shadow: 2px 2px $c;
+
+}
+
+.temperature {
+
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color: $w;
+    border-radius: 1rem;
+    padding: 15px 25px;
+    color:#fff;
+    font-size: 7rem;
+    font-weight: 900;
+    text-shadow: 3px 6px $c;
+    text-align: $c;
+    box-shadow: 3px 6px $gradientMargin1;
+
+}
+  
+.meteorology {
+
+    color:#fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 3px 3px $c;
+
+}
