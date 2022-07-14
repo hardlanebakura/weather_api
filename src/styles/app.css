@@ -13,23 +13,16 @@
   min-height: 100vh;
   background-size: cover;
 }
-
-.warm-weather {
-  background-image: url("../images/warm-weather.jpeg");
-}
-
-.weather__container {
+.App .weather__container {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
   padding: 25px;
 }
-
-.searchbox {
+.App .weather__container .searchbox {
   width: 76%;
   margin: 0 auto 75px;
 }
-
-.searchbar {
+.App .weather__container .searchbox .searchbar {
   display: block;
   width: 100%;
   padding: 15px;
@@ -44,16 +37,14 @@
   border-radius: 0 0 16px 16px;
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 }
-
-.city__container {
+.App .weather__container .city__container {
   color: #fff;
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
-
-.date {
+.App .weather__container .city__container .date {
   color: #fff;
   font-size: 1.25rem;
   font-weight: 300;
@@ -61,8 +52,7 @@
   text-align: center;
   text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
 }
-
-.temperature {
+.App .weather__container .weather .temperature {
   position: relative;
   display: inline-block;
   margin: 30px auto;
@@ -76,10 +66,13 @@
   text-align: rgba(50, 50, 70, 0.5);
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
-
-.meteorology {
+.App .weather__container .weather .meteorology {
   color: #fff;
   font-size: 3rem;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.warm-weather {
+  background-image: url("../images/warm-weather.jpeg");
 }/*# sourceMappingURL=app.css.map */
